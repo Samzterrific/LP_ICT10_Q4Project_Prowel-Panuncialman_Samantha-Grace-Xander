@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <py-config>
+        packages = ['numpy', 'matplotlib']
+    </py-config>
+
+    <style>
+        body {
+        background: linear-gradient(135deg, #c64e4e, #da6c6c);
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-title {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-btn {
+            padding: 8px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-btn.red {
+            background-color: #ff909b;
+        }
+
+        .nav-btn.blue {
+            background-color: #9bc3ff;
+        }
+
+        .nav-btn.green {
+            background-color: #278f5f;
+        }
+
+        .nav-btn:hover {
+            opacity: 0.8;
+        }
+
+        h1 {
+        text-align: center;
+        margin: 40px 0 20px;
+        color: #333;
+        }
+
+        .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        }
+
+        .card-content {
+        padding: 12px;
+        }
+
+        .card h3 {
+        margin: 0;
+        font-size: 16px;
+        color: #222;
+        }
+
+        .card p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: #666;
+        }
+
+        footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 13px;
+        color: #eee;
+        }
+
+        .card {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+        transition: 0.25s ease;
+        backdrop-filter: blur(8px);
+        }
+
+        .card:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        }
+
+        .page-title {
+        text-align: center;
+        margin-top: 100px; /* space below navbar */
+        margin-bottom: 20px;
+        color: white;
+        font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-title">4th Quarter Project</div>
+    <div class="nav-buttons">
+        <a href="index.html" class="nav-btn red">Classmates</a>
+        <a href="tracker.html" class="nav-btn blue">Attendance Tracker</a>
+        <a href="gallery.html" class="nav-btn green">Gallery</a>
+    </div>
+</nav>
+
+<h1 class="page-title">10-Ruby's Favorite Subjects!</h1>
+
+<div class="gallery">
+
+<div class="card"><img src="sir cally.png"><div class="card-content"><h3>Nathan</h3><p>Science</p></div></div>
+<div class="card"><img src="math 2.png"><div class="card-content"><h3>Thea</h3><p>Math</p></div></div>
+<div class="card"><img src="Music 1.png"><div class="card-content"><h3>Maiah</h3><p>Music and SS</p></div></div>
+<div class="card"><img src="music.png"><div class="card-content"><h3>Anxela</h3><p>Music and SS</p></div></div>
+<div class="card"><img src="art.png"><div class="card-content"><h3>Gab</h3><p>Art</p></div></div>
+<div class="card"><img src="philo.png"><div class="card-content"><h3>Joo</h3><p>Social Studies</p></div></div>
+<div class="card"><img src="snack.png"><div class="card-content"><h3>Caiomey</h3><p>Snacktime</p></div></div>
+<div class="card"><img src="TLE.png"><div class="card-content"><h3>Athena</h3><p>TLE</p></div></div>
+<div class="card"><img src="niko.png"><div class="card-content"><h3>Niko</h3><p>PE</p></div></div>
+<div class="card"><img src="fallacy.png"><div class="card-content"><h3>Chelsea</h3><p>Social Studies</p></div></div>
+<div class="card"><img src="tkam.png"><div class="card-content"><h3>Jercey</h3><p>English</p></div></div>
+<div class="card"><img src="math 67.png"><div class="card-content"><h3>Sittie</h3><p>Math</p></div></div>
+<div class="card"><img src="Math 1.png"><div class="card-content"><h3>Jarett</h3><p>Math</p></div></div>
+<div class="card"><img src="cooking.png"><div class="card-content"><h3>Jakob E</h3><p>TLE</p></div></div>
+<div class="card"><img src="fallacies.png"><div class="card-content"><h3>Chloe</h3><p>Social Studies</p></div></div>
+<div class="card"><img src="tlee.png"><div class="card-content"><h3>Uriel</h3><p>TLE</p></div></div>
+<div class="card"><img src="PE 1.png"><div class="card-content"><h3>Aaron</h3><p>PE</p></div></div>
+<div class="card"><img src="engg.png"><div class="card-content"><h3>Gelo</h3><p>English</p></div></div>
+<div class="card"><img src="sophy.png"><div class="card-content"><h3>Ezra</h3><p>Social Studies</p></div></div>
+<div class="card"><img src="basketball.png"><div class="card-content"><h3>Jakob L</h3><p>SS and PE</p></div></div>
+<div class="card"><img src="sci.png"><div class="card-content"><h3>Anika</h3><p>Eng and Sci</p></div></div>
+<div class="card"><img src="moosic.png"><div class="card-content"><h3>Kaila</h3><p>Music</p></div></div>
+<div class="card"><img src="sir alca.png"><div class="card-content"><h3>Xander</h3><p>Math</p></div></div>
+<div class="card"><img src="sam ss.png"><div class="card-content"><h3>Sam</h3><p>Social Studies</p></div></div>
+<div class="card"><img src="better pe.png"><div class="card-content"><h3>Pio</h3><p>PE</p></div></div>
+<div class="card"><img src="ss.png"><div class="card-content"><h3>Katelyn</h3><p>SS</p></div></div>
+<div class="card"><img src="dismiss.png"><div class="card-content"><h3>Andrei</h3><p>Dismissal</p></div></div>
+<div class="card"><img src="gym.png"><div class="card-content"><h3>Hans</h3><p>PE and SS</p></div></div>
+  
+</div>
+
+<footer>
+  © 2025 to 2026 10-Ruby. All rights reserved.
+</footer>
+
+
+</body>
